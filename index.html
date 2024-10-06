@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Motivation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #image {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quote-container {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .quote-container #author {
+            font-style: italic;
+            color: #555;
+        }
+
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        #mode-toggle {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #mode-toggle:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Motivation</h1>
+        <img id="image" src="" alt="Motivational Image">
+        
+        <!-- Quote Section Below the Image -->
+        <div class="quote-container">
+            <p id="quote"></p>
+            <p id="author"></p>
+        </div>
+
+        <button id="mode-toggle">Switch to Dark Mode</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
